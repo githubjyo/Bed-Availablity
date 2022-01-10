@@ -1,0 +1,87 @@
+
+<div class="banner">
+    <img class="img-fluid img-ed" src="assets\images\ab1.jpg">
+    <div class="banner-text">
+        <b><h1>FOODS</h1></b>
+    </div>
+</div>
+<br><br>
+
+<div class="container mb-5 pb-5 bgcolor">
+    <h1 style="text-align: center;">Foods</h1> 
+    <!-- <button class="btn btn-info">Create New</button> -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+             <div class="card p-1 pb-5">
+                <div class="facility">
+                 <img src="assets\images\ab1.jpg" class="img-fluid img-responsive"></div>
+                 <span>Panner</span>
+                 <span>Food1</span>
+                 <h5>50 $</h5>
+             </div>
+        </div>
+        <div class="col-md-4">
+             <div class="card p-1 pb-5">
+                <div class="facility">
+                 <img src="assets\images\t3.jpg" class="img-fluid img-responsive"></div>
+                 <span>Fish</span>
+                 <span>very Delicious</span>
+                 <h5>50 $</h5>
+             </div>
+         </div>
+         <div class="col-md-4">
+             <div class="card p-1 pb-5">
+                <div class="facility">
+                 <img src="assets\images/ab3.jpg" class="img-fluid img-responsive"></div>
+                 <span>Dosa</span>
+                 <span>wooow</span>
+                 <h5>12 $</h5>
+             </div>
+         </div>
+    </div>
+
+    <br><br>
+
+
+    <div class="row justify-content-center">
+    
+        <div class="col-md-6 text-left bg-white rounded shadow py-3">
+    
+            <h3 style="text-align: center;">Add Food</h3>
+            <br><br>
+            <form [formGroup]="myReactiveForm" >
+                
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputfo">Description</label>
+                            <select type="text" formControlName="description" class="form-control" id="exampleInputfo">
+                                <option value=""></option>
+                                <option value="Gulabjam">Gulabjam </option>
+                                <option value="Pizza">Pizza</option>
+                                <option value="Samosa">Samosa</option>
+                                <option value="Fish">Fish</option></select>
+                                  
+                                   
+                              
+                               
+                                
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputimage1">image</label>
+                      <input type="text" formControlName="image" class="form-control" id="exampleInputimage" >
+                                   
+                        </div>
+                    </div>
+                   
+            
+                 <button type="submit" (click)="postfooddetail()" class="btn btn-primary">Submit</button>&nbsp;
+                <a routerLink="/food-detail">  <button type="button" (click)="getfood()"  class="btn btn-primary">View</button></a>
+            </form>
+    
+        </div>
+    </div>
+    </div>
+    
+    <br><br> <app-footer></app-footer>

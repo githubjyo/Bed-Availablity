@@ -1,0 +1,118 @@
+{
+  "posts": [
+    {
+      "id": 7,
+      "description": "double_ac",
+      "firstName": "yash",
+      "lastName": "patil",
+      "sdate": "2022-01-17T18:30:00.000Z",
+      "edate": "2022-01-18T18:30:00.000Z",
+      "email": "yash@gmail.com",
+      "mobile": "7845123654"
+    },
+    {
+      "id": 8,
+      "description": "2000",
+      "firstName": "sai",
+      "lastName": "patil",
+      "sdate": "2022-01-10T18:30:00.000Z",
+      "edate": "2022-01-11T18:30:00.000Z",
+      "email": "sai@gmail.com",
+      "mobile": "7845123698"
+    },
+    {
+      "id": 9,
+      "description": "SA 2000/Day",
+      "firstName": "amol",
+      "lastName": "avhad",
+      "sdate": "2022-01-11T18:30:00.000Z",
+      "edate": "2022-01-12T18:30:00.000Z",
+      "email": "amol1@gmail.com",
+      "mobile": "7845123654"
+    },
+    {
+      "id": 10,
+      "description": "SNA 1000/Day",
+      "firstName": "jyoti",
+      "lastName": "Ghuge",
+      "sdate": "2022-01-17T18:30:00.000Z",
+      "edate": "2022-01-18T18:30:00.000Z",
+      "email": "jyoti@gmail.com",
+      "mobile": "1245698745"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "sai",
+      "email": "saii@gmail.com",
+      "password": "12345",
+      "mobile": 7845123654,
+      "id": 2
+    },
+    {
+      "fullname": "jyoti",
+      "email": "jyoti@gmail.com",
+      "password": "123456",
+      "mobile": 4569897856,
+      "id": 3
+    },
+    {
+      "fullname": "yash",
+      "email": "yash@gmail.com",
+      "password": "123456",
+      "mobile": 7845123654,
+      "id": 4
+    },
+    {
+      "fullname": "Amol",
+      "email": "amol1@gmail.com",
+      "password": "123456",
+      "mobile": 9856345678,
+      "id": 5
+    },
+    {
+      "fullname": "Jyoti",
+      "email": "jyo@gmail.com",
+      "password": "45678",
+      "mobile": 4512365487,
+      "id": 6
+    }
+  ],
+  "food": [
+    {
+      "id": 3,
+      "description": "Pizza",
+      "image": "https://image.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg"
+    },
+    {
+      "id": 4,
+      "description": "Gulabjam",
+      "image": "https://t4.ftcdn.net/jpg/02/38/93/01/240_F_238930194_wAdhfz3TKzcvQD5mry2OzXcuAd5dKGr6.jpg"
+    }
+  ],
+  "room": [
+    {
+      "id": 1,
+      "floor": "3",
+      "room": "double_ac"
+    },
+    {
+      "id": 2,
+      "floor": "3",
+      "room": "single_nonac"
+    },
+    {
+      "id": 3,
+      "floor": "6",
+      "room": "single_nonac"
+    },
+    {
+      "id": 4,
+      "floor": "5",
+      "room": "single_nonac"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

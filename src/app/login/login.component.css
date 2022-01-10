@@ -1,0 +1,26 @@
+
+.card label,
+h6{
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+.card{
+    top: 5px;
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;  
+    top: 20%; 
+    left: 55%;
+    
+    background: hsla(205,46%,30%,1);
+    background: linear-gradient(90deg,hsla(205,46%,30%,1)0%,hsla(260,29%,36%,1)100%);
+
+}

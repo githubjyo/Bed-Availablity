@@ -1,0 +1,101 @@
+<nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+      <h4>Customer Details</h4>
+    
+    <!-- <div class="d.flex">
+   <button (click)="clickAddEmploye()"type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1"><a href="contactus">Add Customer</a></button>
+    </div> -->
+  </div>
+  </nav>
+
+  <table class="table mt-3">
+      <thead>
+          <tr>
+            
+            <th scope="col">User Id</th>
+            <th scope="col">Room Floor</th>
+            <th scope="col">Room Type</th>
+           
+            <th scope="col">Action</th>
+            
+
+          </tr>
+        </thead>
+      <tbody>
+          <tr *ngFor='let row of roomModel; index as i'>
+            <td>{{i+1}}</td>
+            <td>{{row.floor}}</td>
+            <td>{{row.room}}</td>
+
+            <!-- <td><img [src]="row.image" width="90" /></td> -->
+            
+           
+           
+              <td>
+                  <button (click)="onEditr(row)" class="btn btn-info" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                    <button (click)="deleterooms(row)" class="btn btn-danger mx-3">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Food Detail</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="myReactiveForm">
+            
+            
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputfloor">Room Floor</label>
+                    <select type="text" formControlName="floor" class="form-control" id="exampleInputfloor">
+                        <option value=""></option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option></select>
+                          
+                           
+                      
+                       
+                        
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputroom">Room Type</label>
+                    <select type="text" formControlName="room" class="form-control" id="exampleInputroom">
+                        <option value=""></option>
+                    <option value="single_ac">Single Bed Ac </option>
+                    <option value="single_nonac">Single Bed Non-Ac </option>
+                    <option value="double_ac">Double Bed Ac </option>
+                    <option value="duble_nonac">Double Bed Non-Ac </option></select>
+                           
+                </div>
+            </div>
+           
+         
+    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+          <button type="button" *ngIf="showUpdate" (click)="updateroomDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br>
+ 

@@ -1,0 +1,48 @@
+.img-ed {
+    opacity: 0.6;
+    height: 400px;
+    width: 1500px;
+    
+  }
+
+.banner{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Playfair Display";
+    
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vl {
+    border-left: 2px solid gray;
+    opacity: 0.5;
+    height: 100px;
+  }
+
+  .columns{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 5px 0;
+  }
+
+  .column{
+    flex: 1;
+    border:  1px solid #F0F0F0;
+    margin: 7px;
+    padding: 10px;
+    background: #F0F0F0;
+    transition: 0.3;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+ 

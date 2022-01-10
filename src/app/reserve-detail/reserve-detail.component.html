@@ -1,0 +1,132 @@
+<nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+      <h4>Customer Details</h4>
+    
+  </div>
+  </nav>
+
+  <table class="table mt-3">
+      <thead>
+          <tr>
+            
+            <th scope="col">User Id</th>
+            <th scope="col">Room Charges</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Check in date</th>
+            <th scope="col">Check Out date</th>
+            <th scope="col">User Emailid</th>
+            <th scope="col">Mobile No.</th>
+            <th scope="col">Action</th>
+            
+
+          </tr>
+        </thead>
+      <tbody>
+          <tr *ngFor='let row of ReserveModel ; index as i' >
+            <td>{{i+1}}</td>
+            <td>{{row.description}}</td>
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.sdate}}</td>
+            <td>{{row.edate}}</td>  
+            <td>{{row.email}}</td>
+            <td>{{row.mobile}}</td>
+           
+           
+              <td>
+                  <button (click)="onEdit(row)" class="btn btn-info" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                    <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Customer Detail</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+            
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputDes">Description</label>
+                    <select type="text" formControlName="description" class="form-control" id="exampleInputDes">
+                      <option value=""></option>
+                      <option value="SA 2000/Day">Single Bed Ac </option>
+                      <option value="SNA 1000/Day">Single Bed Non-Ac </option>
+                      <option value="DA 4000/Day">Double Bed Ac </option>
+                      <option value="DNA 3000/Day">Double Bed Non-Ac </option></select>
+                      
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputfname1">First Name</label>
+              <input type="text" formControlName="firstName" class="form-control" id="exampleInputfname1" >
+                        
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputlname1">lastName</label>
+              <input type="text" formControlName="lastName" class="form-control" id="exampleInputlname1" >
+                       
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputsdate">Check In date</label>
+              <input type="date" formControlName="sdate" class="form-control" id="exampleInputsdate" >
+                       
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputedate">Check Out date</label>
+              <input type="date" formControlName="edate" class="form-control" id="exampleInputedate" >
+                        
+                </div>
+            </div>
+
+           
+       
+        <div class="form-group">
+            <div class="mb-3">
+                <label for="exampleInputPassword1">User Email Id</label>
+                <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" >
+                    
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputmobile">Mobile No</label>
+                <input type="text" formControlName="mobile" class="form-control" id="exampleInputmobile" >
+               
+        </div>
+    
+         
+    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+          <button type="button" *ngIf="showUpdate" (click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br>
+ 

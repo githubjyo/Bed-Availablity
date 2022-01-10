@@ -1,0 +1,91 @@
+.gallery{
+    margin: 50px 50px ;
+}
+.gallery img{
+    width: 1000px;
+    padding: 20px;
+    transition: 1s;
+
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+    
+}
+
+.gallery img:hover{
+  
+    transform: scale(1.1);
+
+}
+
+.facility{
+    margin: 10px 10px ;
+}
+.facility img{
+    width: 1000px;
+    padding: 5px;
+    transition: 1s;
+
+    
+}
+
+.facility img:hover{
+  
+    transform: scale(1.1);
+
+}
+
+.h4{
+    font-family: "Satisfy", sans-serif;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-style: oblique;
+}
+
+.p{
+    text-align: justify;
+    
+}
+
+.container{
+    background-color: rgb(230, 228, 228);
+}
+.h4{
+    font-family: "Satisfy", sans-serif;
+    font-style: oblique;
+    margin-left: 10px;
+}
+
+.bgcolor{
+    background-color: rgb(229, 226, 226);
+}
+img{
+    border: 1px solid rgb(201, 199, 199);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.star{
+    color: goldenrod;
+    font-weight: 1000;
+ 
+}
+h1{
+    color: goldenrod;
+    font-weight: 500;
+    font-family:sans-serif;
+}
+h4{
+    color: goldenrod;
+    font-weight: 500;
+    font-family:sans-serif; 
+}
+h3{
+    color: goldenrod;
+    font-weight: 500;
+    font-family:sans-serif;
+}
+.btn{
+    background-color:rgb(233, 191, 85);
+}
