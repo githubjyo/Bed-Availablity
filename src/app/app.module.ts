@@ -24,6 +24,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RoomtypeDetailComponent } from './roomtype-detail/roomtype-detail.component';
 import { AdminComponent } from './admin/admin.component';
+
+import { ReservationService } from './admin/reservation.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,9 +42,11 @@ import { AdminComponent } from './admin/admin.component';
     FooterComponent,
     SignupComponent,
     FoodDetailComponent,
-  
+    
     RoomtypeDetailComponent,
     AdminComponent
+   
+    
   ],
   imports: [
     BrowserModule,
@@ -53,8 +59,9 @@ import { AdminComponent } from './admin/admin.component';
     MatInputModule,
     MatNativeDateModule,
     HttpClientModule
+   
   ],
-  providers: [ApiService],
+  providers: [ApiService , ReservationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

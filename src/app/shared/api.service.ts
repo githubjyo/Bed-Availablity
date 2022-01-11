@@ -95,4 +95,31 @@ export class ApiService {
     }))
   }
   
+  getCon(){
+    return this.http.get<any>("http://localhost:3000/contact")
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  postCont(data : any){
+    return this.http.post<any>("http://localhost:3000/contact",data)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  updateCont(date : any, id: number){
+    return this.http.put<any>("http://localhost:3000/contact/"+id,date)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  deleteCont(id : number){
+    return this.http.delete<any>("http://localhost:3000/contact/"+id)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  
 }

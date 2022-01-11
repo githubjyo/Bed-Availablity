@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,7 +8,10 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 form !:FormGroup;
-  constructor() { }
+
+constructor(private formbuilder: FormBuilder,
+  ) { }
+
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -20,6 +24,7 @@ form !:FormGroup;
       body: new FormControl('', Validators.required)
   
     })
+ 
   }
 
   get f(){
@@ -36,5 +41,4 @@ form !:FormGroup;
     this.form.reset();
 
   }
-
-}
+  }

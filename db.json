@@ -76,18 +76,35 @@
       "password": "45678",
       "mobile": 4512365487,
       "id": 6
+    },
+    {
+      "fullname": "jyoti",
+      "email": "jyoti7@gmail.com",
+      "password": "45612",
+      "mobile": 7845123654,
+      "id": 7
+    },
+    {
+      "fullname": "surya",
+      "email": "surya@gmail.com",
+      "password": "12345",
+      "mobile": 7845698745,
+      "id": 8
+    },
+    {
+      "fullname": "yash",
+      "email": "yash1@gmail.com",
+      "password": "123456",
+      "mobile": 4578963254,
+      "category": "hotelmanager",
+      "id": 9
     }
   ],
   "food": [
     {
-      "id": 3,
+      "id": 1,
       "description": "Pizza",
-      "image": "https://image.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg"
-    },
-    {
-      "id": 4,
-      "description": "Gulabjam",
-      "image": "https://t4.ftcdn.net/jpg/02/38/93/01/240_F_238930194_wAdhfz3TKzcvQD5mry2OzXcuAd5dKGr6.jpg"
+      "image": "https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?size=338&ext=jpg"
     }
   ],
   "room": [
@@ -110,6 +127,26 @@
       "id": 4,
       "floor": "5",
       "room": "single_nonac"
+    },
+    {
+      "id": 5,
+      "floor": "5",
+      "room": "single_nonac"
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "name": "",
+      "email": "",
+      "mob": "",
+      "body": ""
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
     }
   ],
   "profile": {

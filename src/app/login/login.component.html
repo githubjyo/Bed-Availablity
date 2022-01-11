@@ -18,8 +18,15 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
                         <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
+                    </div><br>
+                    <div class="mb-3">
+                    <select class="form-control" id="category" formControlName="category">
+                        <option value=""> </option>
+                        <option value="hotelmanager"> Hotel Manager </option>
+                        <option value="user"> User</option>
+                        
+                      </select>
                     </div>
-                    
                     <button type="submit"  [disabled]="!loginForm.valid" class="btn btn-primary">Login</button>&nbsp;
                     
                 </form>

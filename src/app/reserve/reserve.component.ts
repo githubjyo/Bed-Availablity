@@ -81,7 +81,7 @@ export class ReserveComponent implements OnInit {
     let ref = document.getElementById('cancel')
     ref?.click();
     this.myReactiveForm.reset();
-    this.router.navigate(['reserve-detail'])
+    // this.router.navigate(['reserve-detail'])
     this.getAllEmployee();
     
    

@@ -12,12 +12,14 @@ import { AdminComponent } from './admin/admin.component';
 import { ReserveComponent } from './reserve/reserve.component';
 import { ReserveDetailComponent } from './reserve-detail/reserve-detail.component';
 import { FoodDetailComponent } from './food-detail/food-detail.component';
+
 const routes: Routes = [
   {
     path:'', component:HomeComponent
   },
   {
-    path:'admin', component:AdminComponent
+    path:'admin', component:AdminComponent,
+    
   },
   {
     path:'home', component:HomeComponent
@@ -34,6 +36,7 @@ const routes: Routes = [
   {
     path:'contact', component:ContactComponent
   },
+  
   {
     path:'login', component:LoginComponent
   },
