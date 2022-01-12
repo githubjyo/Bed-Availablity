@@ -1,5 +1,5 @@
 .img-ed {
-    opacity: 0.6;
+    opacity: 0.7;
     height: 400px;
     width: 1500px;
     
@@ -44,5 +44,7 @@
   ul {
     list-style: none;
   }
-
+.container{
+background-color: #F0F0F0;;
+}
  

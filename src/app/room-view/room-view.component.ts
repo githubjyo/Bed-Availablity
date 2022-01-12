@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { roomModel } from './roomtype-detail.model'; 
+import { roomModel } from './room-view.model'; 
 import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angular/forms';
 import { ApiService } from '../shared/api.service';
 @Component({
-  selector: 'app-roomtype-detail',
-  templateUrl: './roomtype-detail.component.html',
-  styleUrls: ['./roomtype-detail.component.css']
+  selector: 'app-room-view',
+  templateUrl: './room-view.component.html',
+  styleUrls: ['./room-view.component.css']
 })
-export class RoomtypeDetailComponent implements OnInit {
+export class RoomViewComponent implements OnInit {
   myReactiveForm!: FormGroup;
   roomModel !: any;
-  showAdd !: boolean;
+  
   showUpdate !: boolean;
   roomModelObj : roomModel = new roomModel();
   constructor(private formbuilder: FormBuilder,
@@ -20,7 +20,8 @@ export class RoomtypeDetailComponent implements OnInit {
     this.myReactiveForm = new FormGroup({
       'roomNo': new FormControl(null, Validators.required),
       'room': new FormControl(null, Validators.required),
-      'price': new FormControl(null, Validators.required),
+      'price': new FormControl(null, Validators.required)
+     
      
     })
     this.myReactiveForm = this.formbuilder.group({
@@ -47,12 +48,12 @@ getroom(){
     }
 
     onEditr(row : any){
-      this.showAdd = false;
+      
       this.showUpdate = true;
       this.roomModelObj.id =  row.id
       this.myReactiveForm.controls['roomNo'].setValue(row.roomNo);
       this.myReactiveForm.controls['room'].setValue(row.room);
-      this.myReactiveForm.controls['price'].setValue(row.room);
+      this.myReactiveForm.controls['price'].setValue(row.price);
       
     }
 
@@ -60,7 +61,6 @@ getroom(){
       this.roomModelObj.roomNo = this.myReactiveForm.value.roomNo;
       this.roomModelObj.room = this.myReactiveForm.value.room;
       this.roomModelObj.price = this.myReactiveForm.value.price;
-      
       
   
       this.api.updateroom(this.roomModelObj,this.roomModelObj.id)

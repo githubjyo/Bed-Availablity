@@ -1,46 +1,4 @@
 
-<div class="banner">
-    <img class="img-fluid img-ed" src="assets\images\ab1.jpg">
-    <div class="banner-text">
-        <b><h1>FOODS</h1></b>
-    </div>
-</div>
-<br><br>
-
-<div class="container mb-5 pb-5 bgcolor">
-    <h1 style="text-align: center;">Foods</h1> 
-    <!-- <button class="btn btn-info">Create New</button> -->
-    <div class="row mt-4">
-        <div class="col-md-4">
-             <div class="card p-1 pb-5">
-                <div class="facility">
-                 <img src="assets\images\ab1.jpg" class="img-fluid img-responsive"></div>
-                 <span>Panner</span>
-                 <span>Food1</span>
-                 <h5>50 $</h5>
-             </div>
-        </div>
-        <div class="col-md-4">
-             <div class="card p-1 pb-5">
-                <div class="facility">
-                 <img src="assets\images\t3.jpg" class="img-fluid img-responsive"></div>
-                 <span>Fish</span>
-                 <span>very Delicious</span>
-                 <h5>50 $</h5>
-             </div>
-         </div>
-         <div class="col-md-4">
-             <div class="card p-1 pb-5">
-                <div class="facility">
-                 <img src="assets\images/ab3.jpg" class="img-fluid img-responsive"></div>
-                 <span>Dosa</span>
-                 <span>wooow</span>
-                 <h5>12 $</h5>
-             </div>
-         </div>
-    </div>
-
-    <br><br>
 
 
     <div class="row justify-content-center">
@@ -53,19 +11,27 @@
                 
                     <div class="form-group">
                         <div class="mb-3">
-                            <label for="exampleInputfo">Description</label>
-                            <select type="text" formControlName="description" class="form-control" id="exampleInputfo">
-                                <option value=""></option>
-                                <option value="Gulabjam">Gulabjam </option>
-                                <option value="Pizza">Pizza</option>
-                                <option value="Samosa">Samosa</option>
-                                <option value="Fish">Fish</option></select>
+                            <label for="exampleInputfoodname">Food Name</label>
+                            <input type="text" formControlName="foodname" class="form-control" id="exampleInputfoodname" >
                                   
                                    
-                              
-                               
-                                
-                        </div>
+                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputdes">Description</label>
+                            <input type="text" formControlName="description" class="form-control" id="exampleInputdes" >
+                                  
+                                   
+                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label for="exampleInputprice">Price</label>
+                            <input type="text" formControlName="price" class="form-control" id="exampleInputprice" >
+                                  
+                                   
+                         </div>
                     </div>
                     <div class="form-group">
                         <div class="mb-3">
@@ -82,6 +48,6 @@
     
         </div>
     </div>
-    </div>
+  
     
     <br><br> <app-footer></app-footer>

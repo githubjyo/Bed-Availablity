@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-primary">
     <!-- Navbar content -->
     <div class="container-fluid">
-      <h4>Customer Details</h4>
+      <h4>Available Room Details</h4>
     
     <!-- <div class="d.flex">
    <button (click)="clickAddEmploye()"type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1"><a href="contactus">Add Customer</a></button>
@@ -13,9 +13,10 @@
       <thead>
           <tr>
             
-            <th scope="col">User Id</th>
-            <th scope="col">Room Floor</th>
+            <th scope="col">Id</th>
+            <th scope="col">Room Number</th>
             <th scope="col">Room Type</th>
+            <th scope="col">Price</th>
            
             <th scope="col">Action</th>
             
@@ -25,8 +26,9 @@
       <tbody>
           <tr *ngFor='let row of roomModel; index as i'>
             <td>{{i+1}}</td>
-            <td>{{row.floor}}</td>
+            <td>{{row.roomNo}}</td>
             <td>{{row.room}}</td>
+            <td>{{row.price}}</td>
 
             <!-- <td><img [src]="row.image" width="90" /></td> -->
             
@@ -48,7 +50,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Food Detail</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Room Detail</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -58,33 +60,26 @@
             
             
             <div class="form-group">
-                <div class="mb-3">
-                    <label for="exampleInputfloor">Room Floor</label>
-                    <select type="text" formControlName="floor" class="form-control" id="exampleInputfloor">
-                        <option value=""></option>
-                        <option value="3">3</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option></select>
-                          
-                           
+              <div class="mb-3">
+                  <label for="exampleInputroomno">Room Number</label>
+                  <input type="text" formControlName="roomNo" class="form-control" id="exampleInputroomno">
                       
-                       
-                        
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="mb-3">
-                    <label for="exampleInputroom">Room Type</label>
-                    <select type="text" formControlName="room" class="form-control" id="exampleInputroom">
-                        <option value=""></option>
-                    <option value="single_ac">Single Bed Ac </option>
-                    <option value="single_nonac">Single Bed Non-Ac </option>
-                    <option value="double_ac">Double Bed Ac </option>
-                    <option value="duble_nonac">Double Bed Non-Ac </option></select>
-                           
-                </div>
-            </div>
+           </div>
+          </div>
+          <div class="form-group">
+              <div class="mb-3">
+                  <label for="exampleInputroom">Room Type</label>
+                  <input type="text" formControlName="room" class="form-control" id="exampleInputroom">
+                      
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="mb-3">
+                  <label for="exampleInputprice">Price</label>
+                  <input type="text" formControlName="price" class="form-control" id="exampleInputprice">
+                      
+              </div>
+          </div>
            
          
     </form>

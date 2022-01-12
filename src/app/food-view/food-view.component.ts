@@ -3,11 +3,12 @@ import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angula
 import { ApiService } from '../shared/api.service';
 import { FoodModel } from '../food/food.model'; 
 @Component({
-  selector: 'app-food-detail',
-  templateUrl: './food-detail.component.html',
-  styleUrls: ['./food-detail.component.css']
+  selector: 'app-food-view',
+  templateUrl: './food-view.component.html',
+  styleUrls: ['./food-view.component.css']
 })
-export class FoodDetailComponent implements OnInit {
+export class FoodViewComponent implements OnInit {
+
   myReactiveForm !: FormGroup;
   FoodModelObj : FoodModel = new FoodModel();
   FoodModel !: any;

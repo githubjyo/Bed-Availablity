@@ -17,10 +17,4 @@ export class AdminComponent implements OnInit {
     this.api.getEmploye()
   .subscribe((res: any) => this.ReserveModel = res)
   }
-
-    
-    
-  
-  
-  
   }

@@ -1,26 +1,6 @@
 {
   "posts": [
     {
-      "id": 7,
-      "description": "double_ac",
-      "firstName": "yash",
-      "lastName": "patil",
-      "sdate": "2022-01-17T18:30:00.000Z",
-      "edate": "2022-01-18T18:30:00.000Z",
-      "email": "yash@gmail.com",
-      "mobile": "7845123654"
-    },
-    {
-      "id": 8,
-      "description": "2000",
-      "firstName": "sai",
-      "lastName": "patil",
-      "sdate": "2022-01-10T18:30:00.000Z",
-      "edate": "2022-01-11T18:30:00.000Z",
-      "email": "sai@gmail.com",
-      "mobile": "7845123698"
-    },
-    {
       "id": 9,
       "description": "SA 2000/Day",
       "firstName": "amol",
@@ -31,14 +11,14 @@
       "mobile": "7845123654"
     },
     {
-      "id": 10,
-      "description": "SNA 1000/Day",
-      "firstName": "jyoti",
-      "lastName": "Ghuge",
-      "sdate": "2022-01-17T18:30:00.000Z",
-      "edate": "2022-01-18T18:30:00.000Z",
-      "email": "jyoti@gmail.com",
-      "mobile": "1245698745"
+      "id": 11,
+      "description": "SA 2000/Day",
+      "firstName": "sachin",
+      "lastName": "patil",
+      "sdate": "2022-01-12T18:30:00.000Z",
+      "edate": "2022-01-13T18:30:00.000Z",
+      "email": "sachin@gmail.com",
+      "mobile": "7845123654"
     }
   ],
   "signupUsers": [
@@ -98,40 +78,60 @@
       "mobile": 4578963254,
       "category": "hotelmanager",
       "id": 9
+    },
+    {
+      "fullname": "Sachin",
+      "email": "sachin@gmail.com",
+      "password": "12345",
+      "mobile": 7845698745,
+      "category": "user",
+      "id": 10
+    },
+    {
+      "fullname": "pranvi",
+      "email": "pranvi@gmail.com",
+      "password": "12345",
+      "mobile": 5689784512,
+      "category": "hotelmanager",
+      "id": 11
     }
   ],
   "food": [
     {
       "id": 1,
-      "description": "Pizza",
-      "image": "https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?size=338&ext=jpg"
+      "foodname": "jalebi",
+      "description": "sweet",
+      "price": "100",
+      "image": "https://images.pexels.com/photos/5807980/pexels-photo-5807980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": 2,
+      "foodname": "pizza",
+      "description": "Margherita",
+      "price": "300",
+      "image": "https://image.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg"
+    },
+    {
+      "id": 3,
+      "foodname": "Paneer Tikka",
+      "description": "Spicy",
+      "price": "200",
+      "image": "https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18813.jpg?size=338&ext=jpg"
+    },
+    {
+      "id": 4,
+      "foodname": "Fish",
+      "description": "Non-Veg",
+      "price": "300",
+      "image": "https://image.freepik.com/free-photo/fried-fish-carp-fresh-vegetable-salad-wooden-table-flat-lay-top-view_2829-19730.jpg"
     }
   ],
   "room": [
     {
       "id": 1,
-      "floor": "3",
-      "room": "double_ac"
-    },
-    {
-      "id": 2,
-      "floor": "3",
-      "room": "single_nonac"
-    },
-    {
-      "id": 3,
-      "floor": "6",
-      "room": "single_nonac"
-    },
-    {
-      "id": 4,
-      "floor": "5",
-      "room": "single_nonac"
-    },
-    {
-      "id": 5,
-      "floor": "5",
-      "room": "single_nonac"
+      "roomNo": "23",
+      "room": "Single-Bed Ac",
+      "price": "2000"
     }
   ],
   "contact": [
@@ -147,6 +147,14 @@
     },
     {
       "id": 3
+    }
+  ],
+  "drink": [
+    {
+      "id": 2,
+      "drink": "Negroni",
+      "Dprice": "200",
+      "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/negroni-1592951342.jpg?crop=1xw:1xh;center,top&resize=980:*"
     }
   ],
   "profile": {

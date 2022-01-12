@@ -1,3 +1,5 @@
+
+<!-- Slider -->
 <div class="container-fluid">
 <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -38,16 +40,18 @@
 </div><br><br>
 </div>
 
+
+<!-- User Can check here bed availablity -->
 <div class="container">
  
       <div class="row">
         <form>
-        <div class="col">
+       
          <h1>Check Bed Availablity</h1>
-        </div>
-        <div class="col">
+       
+       
         <mat-form-field appearance="fill">
-          <!-- <mat-label>Enter a date range</mat-label> -->
+         
           <mat-date-range-input [rangePicker]="picker">
             <input matStartDate placeholder="Check in" formControlName="start">
             <input matEndDate placeholder="Check out" formControlName="End">
@@ -55,13 +59,13 @@
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-date-range-picker #picker></mat-date-range-picker>
         </mat-form-field>
-      </div>
-      <div><a routerLink="/roomtype"><button class="btn">Search</button></a> </div>
+     &nbsp;&nbsp;&nbsp;
+     <a routerLink="/roomtype"><button class="btn">Search</button></a>
     </form>
       </div>
       </div><br>
 
-
+<!-- Which Type Room Available In hotel -->
 <div class="container mb-5 pb-5 bgcolor">
   <h1 style="text-align: center;">Rooms</h1> 
   
@@ -69,7 +73,7 @@
       <div class="col-md-4">
            <div class="card p-1 pb-5">
              <div class="facility">
-               <img src="assets\images\sroom.jpg" class="img-fluid img-responsive">
+              <a routerLink='/roomtype'><img src="assets\images\sroom.jpg" class="img-fluid img-responsive"></a> 
               </div>
                <br>
                <h4>Single Bed Room</h4>
@@ -79,7 +83,7 @@
       <div class="col-md-4">
            <div class="card p-1 pb-5">
             <div class="facility">
-               <img src="assets\images\room2.jpg" class="img-fluid img-responsive">
+              <a routerLink='/roomtype'><img src="assets\images\room2.jpg" class="img-fluid img-responsive"></a> 
               </div>
                <br>
                <h4>Double Bed Room</h4>
@@ -88,7 +92,7 @@
        <div class="col-md-4">
            <div class="card p-1 pb-5">
             <div class="facility">
-               <img src="assets\images\room3.jpg" class="img-fluid img-responsive">
+              <a routerLink='/roomtype'><img src="assets\images\room3.jpg" class="img-fluid img-responsive"></a>
                <br>
               </div>
                <h4>Delux</h4>
@@ -98,12 +102,12 @@
   </div>
 
 
-
+<!-- About Section -->
 <div class="container">
   
     <div class="row">
       
-      <div class="col-md-5"><div class="gallery"><img src="assets\images\about.jpg" alt="..." class="img-thumbnail"></div></div>
+      <div class="col-md-5"><div class="gallery"><a routerLink='/room'><img src="assets\images\about.jpg" alt="..." class="img-thumbnail"></a></div></div>
 
     <div class="col-md-5"><h4 class="h4">Welcome To <span class="star" >STAR HOTEL</span></h4>
     <p class="p">A hotel is an establishment that provides paid lodging on a short-term basis. 
@@ -118,6 +122,8 @@
   </div>
   </div><br><br><br><br>
 
+
+  <!-- Which Facilities Available  -->
   <div class="container mb-5 pb-5 bgcolor">
     <h1 style="text-align: center;">Facilities</h1> 
     
@@ -125,7 +131,7 @@
         <div class="col-md-4">
              <div class="card p-1 pb-5">
                <div class="facility">
-                 <img src="assets\images\room1.jpg" class="img-fluid img-responsive">
+                <a routerLink='/roomtype'><img src="assets\images\room1.jpg" class="img-fluid img-responsive"></a>
                 </div>
                  <br>
                  <h3>Room Facilities</h3>
@@ -135,7 +141,7 @@
         <div class="col-md-4">
              <div class="card p-1 pb-5">
               <div class="facility">
-                 <img src="assets\images\t3.jpg" class="img-fluid img-responsive">
+                <a routerLink='/food'><img src="assets\images\t3.jpg" class="img-fluid img-responsive"></a>
                 </div>
                  <br>
                  <h3>Food Facilities</h3>

@@ -13,11 +13,11 @@
       <thead>
           <tr>
             
-            <th scope="col">User Id</th>
-            <th scope="col">Food type</th>
+            <th scope="col">Sr No,</th>
+            <th scope="col">Food Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
             <th scope="col">Image</th>
-           
-            <th scope="col">Action</th>
             
 
           </tr>
@@ -25,7 +25,9 @@
       <tbody>
           <tr *ngFor='let row of FoodModel; index as i'>
             <td>{{i+1}}</td>
+            <td>{{row.foodname}}</td>
             <td>{{row.description}}</td>
+            <td>{{row.price}}</td>
             <!-- <td>{{row.image}}</td> -->
 
             <td><img [src]="row.image" width="90" /></td>
@@ -57,29 +59,38 @@
           <form [formGroup]="myReactiveForm">
             
             
+            
             <div class="form-group">
-                <div class="mb-3">
-                    <label for="exampleInputfo">Description</label>
-                    <select type="text" formControlName="description" class="form-control" id="exampleInputfo">
-                      <option value=""></option>
-                      <option value="Gulabjam">Gulabjam </option>
-                      <option value="Pizza">Pizza</option>
-                      <option value="Samosa">Samosa</option>
-                      <option value="Fish">Fish</option></select>
+              <div class="mb-3">
+                  <label for="exampleInputfoodname">Food Name</label>
+                  <input type="text" formControlName="foodname" class="form-control" id="exampleInputfoodname" >
                         
-                      
-                       
-                     
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="mb-3">
-                    <label for="exampleInputimage1">image</label>
-              <input type="text" formControlName="image" class="form-control" id="exampleInputimage" >
-                           
-                </div>
-            </div>
-           
+                         
+               </div>
+          </div>
+          <div class="form-group">
+              <div class="mb-3">
+                  <label for="exampleInputdes">Description</label>
+                  <input type="text" formControlName="description" class="form-control" id="exampleInputdes" >
+                        
+                         
+               </div>
+          </div>
+          <div class="form-group">
+              <div class="mb-3">
+                  <label for="exampleInputprice">Price</label>
+                  <input type="text" formControlName="price" class="form-control" id="exampleInputprice" >
+                        
+                         
+               </div>
+          </div>
+          <div class="form-group">
+              <div class="mb-3">
+                  <label for="exampleInputimage1">image</label>
+            <input type="text" formControlName="image" class="form-control" id="exampleInputimage" >
+                         
+              </div>
+          </div>
          
     </form>
         </div>

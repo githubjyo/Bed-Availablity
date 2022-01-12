@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { roomModel } from './roomtype.model'; 
 import { FormControl, FormGroup, Validators, NgForm, FormBuilder } from '@angular/forms';
 import { ApiService } from '../shared/api.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-roomtype',
   templateUrl: './roomtype.component.html',
@@ -12,23 +13,26 @@ export class RoomtypeComponent implements OnInit {
   roomModel !: any;
   roomModelObj : roomModel = new roomModel();
   constructor(private formbuilder: FormBuilder,
-    private api :ApiService) { }
+    private api :ApiService , private router:Router) { }
   ngOnInit(): void {
     this.myReactiveForm = new FormGroup({
-      'floor': new FormControl(null, Validators.required),
+      'roomNo': new FormControl(null, Validators.required),
       'room': new FormControl(null, Validators.required),
+      'price': new FormControl(null, Validators.required),
      
     })
     this.myReactiveForm = this.formbuilder.group({
-      floor:[''],
-      room:['']
+      roomNo:[''],
+      room:[''],
+      price:['']
      
     })
     this.getroom();
   }
   postroomdetail(){
-    this.roomModelObj.floor = this.myReactiveForm.value.floor;
+    this.roomModelObj.roomNo = this.myReactiveForm.value.roomNo;
     this.roomModelObj.room = this.myReactiveForm.value.room;
+    this.roomModelObj.price = this.myReactiveForm.value.price;
     
   
   this.api.postroom(this.roomModelObj)
@@ -38,6 +42,7 @@ export class RoomtypeComponent implements OnInit {
     let ref = document.getElementById('cancel')
     ref?.click();
     this.myReactiveForm.reset();
+    this.router.navigate(['roomtype-detail'])
     this.getroom();
    
   },

@@ -1,20 +1,21 @@
 <div class="container">
     <div class="row">
         
-        <div class="col-md-3"><a routerLink="/reserve-detail">User Reservation Detail</a></div>
-        <div class="col-md-3"><a routerLink="/roomtype-detail">User Room Detail</a></div>
-        <div class="col-md-3"><a routerLink="/food-detail">User Food Detail</a></div>
+        <div class="col-md-3"><a routerLink="/reserve-detail"> Reservation Detail</a></div>
+        <div class="col-md-3"><a routerLink="/roomtype"> Room Detail</a></div>
+        <div class="col-md-3"><a routerLink="/food"> Food Detail</a></div>
+        <!-- <div class="col-md-3"><a routerLink="/drink">Add Drink </a></div> -->
         
     </div>
 </div>
 
-<h4>Customer Details</h4>
+
 
 
 <nav class="navbar navbar-dark bg-primary">
     <!-- Navbar content -->
     <div class="container-fluid">
-      <h4>Customer Details</h4>
+     
     
     </div>
     
@@ -24,7 +25,7 @@
       <thead>
           <tr>
             
-            <th scope="col">User Id</th>
+            <th scope="col">Id</th>
             <th scope="col">Room Charges</th>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
@@ -49,10 +50,7 @@
             <td>{{row.mobile}}</td>
            
            
-              <td>
-                  <!-- <button  class="btn btn-info" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button  class="btn btn-danger mx-3">Delete</button> -->
-              </td>
+              
           </tr>
       </tbody>
   </table>

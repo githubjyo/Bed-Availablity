@@ -122,4 +122,32 @@ export class ApiService {
     }))
   }
   
+
+  getdrin(){
+    return this.http.get<any>("http://localhost:3000/drink")
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  postdrink(data : any){
+    return this.http.post<any>("http://localhost:3000/drink",data)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  updatedrink(date : any, id: number){
+    return this.http.put<any>("http://localhost:3000/drink/"+id,date)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  deletedrink(id : number){
+    return this.http.delete<any>("http://localhost:3000/drinkt/"+id)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  
 }

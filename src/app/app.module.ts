@@ -26,6 +26,12 @@ import { RoomtypeDetailComponent } from './roomtype-detail/roomtype-detail.compo
 import { AdminComponent } from './admin/admin.component';
 
 import { ReservationService } from './admin/reservation.service';
+import { DrinkComponent } from './drink/drink.component';
+import { DrinkDetailComponent } from './drink-detail/drink-detail.component';
+import { FoodServicesComponent } from './food-services/food-services.component';
+import { RoomServiceComponent } from './room-service/room-service.component';
+import { FoodViewComponent } from './food-view/food-view.component';
+import { RoomViewComponent } from './room-view/room-view.component';
 
 
 @NgModule({
@@ -44,7 +50,13 @@ import { ReservationService } from './admin/reservation.service';
     FoodDetailComponent,
     
     RoomtypeDetailComponent,
-    AdminComponent
+    AdminComponent,
+    DrinkComponent,
+    DrinkDetailComponent,
+    FoodServicesComponent,
+    RoomServiceComponent,
+    FoodViewComponent,
+    RoomViewComponent
    
     
   ],
@@ -58,7 +70,8 @@ import { ReservationService } from './admin/reservation.service';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    HttpClientModule
+    HttpClientModule,
+ 
    
   ],
   providers: [ApiService , ReservationService],

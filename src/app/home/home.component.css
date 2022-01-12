@@ -5,18 +5,12 @@
     width: 1000px;
     padding: 20px;
     transition: 1s;
-
-    box-shadow: 10px 10px 5px #ccc;
-    -moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    -khtml-box-shadow: 10px 10px 5px #ccc;
-    
+  
 }
 
 .gallery img:hover{
   
     transform: scale(1.1);
-
 }
 
 .facility{

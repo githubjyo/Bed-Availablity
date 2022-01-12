@@ -1,0 +1,52 @@
+
+img{
+    border: 1px solid rgb(201, 199, 199);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.img-ed {
+    opacity: 0.6;
+    height: 400px;
+    width: 1500px;
+    
+  }
+
+.banner{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "Playfair Display";
+    
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    background-color: rgb(230, 228, 228);
+}
+
+.facility{
+    margin: 10px 10px ;
+}
+.facility img{
+    width: 1000px;
+    padding: 5px;
+    transition: 1s;
+    
+}
+
+.facility img:hover{
+  
+    transform: scale(1.1);
+
+}
+h1{
+    color: goldenrod;
+}
+h3{
+    color: goldenrod;
+}

@@ -1,0 +1,99 @@
+<nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+      <h4>Customer Details</h4>
+    
+    <!-- <div class="d.flex">
+   <button (click)="clickAddEmploye()"type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1"><a href="contactus">Add Customer</a></button>
+    </div> -->
+  </div>
+  </nav>
+
+  <table class="table mt-3">
+      <thead>
+          <tr>
+            
+            <th scope="col">Sr No,</th>
+            <th scope="col">Food Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            
+
+          </tr>
+        </thead>
+      <tbody>
+          <tr *ngFor='let row of DrinkModel; index as i'>
+            <td>{{i+1}}</td>
+            <td>{{row.drink}}</td>
+            <td>{{row.Dprice}}</td>
+           
+            <td><img [src]="row.image" width="90" /></td>
+            
+           
+           
+              <td>
+                  <button (click)="onEditd(row)" class="btn btn-info" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                    <button (click)="deletedrinks(row)" class="btn btn-danger mx-3">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Food Detail</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="myReactiveForm">
+            
+            
+            
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputdrinkname">Drink Name</label>
+                    <input type="text" formControlName="drink" class="form-control" id="exampleInputdrinkname" >
+                          
+                           
+                 </div>
+            </div>
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputprice">Price</label>
+                    <input type="text" formControlName="Dprice" class="form-control" id="exampleInputprice" >
+                          
+                           
+                 </div>
+            </div>
+        
+           
+            <div class="form-group">
+                <div class="mb-3">
+                    <label for="exampleInputimage2">image</label>
+              <input type="text" formControlName="image" class="form-control" id="exampleInputimage2" >
+                           
+                </div>
+            </div>
+           
+         
+    </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+          <button type="button" *ngIf="showUpdate" (click)="updatedrinkDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+ 
+<br><br><br>
+ 

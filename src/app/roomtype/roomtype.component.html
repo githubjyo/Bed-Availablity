@@ -1,48 +1,4 @@
-<div class="banner">
-    <img class="img-fluid img-ed" src="assets\images\3.jpg">
-    <div class="banner-text">
-        <b><h1>ROOMS</h1></b>
-    </div>
-</div>
-<br><br>
 
-
-<div class="container">
-<h1 style="text-align: center;">Rooms</h1> 
-  
-   <div class="row mt-4">
-    <div class="col-md-4">
-         <div class="card p-2 pb-2">
-            <div class="facility">
-             <img src="assets\images\room1.jpg" class="img-fluid img-responsive"></div>
-             <span>12</span>
-            
-             <span>Single bed</span>
-             <h5>1000/Day</h5>
-         </div>
-    </div>
-    <div class="col-md-4">
-         <div class="card p-2 pb-2">
-            <div class="facility">
-             <img src="assets\images\room2.jpg" class="img-fluid img-responsive"></div>
-             <span>233</span>
-             
-             <span>Double bed</span>
-             <h5>2000/Day</h5>
-         </div>
-     </div>
-     <div class="col-md-4">
-         <div class="card p-2 pb-2">
-            <div class="facility">
-             <img src="assets\images\room3.jpg" class="img-fluid img-responsive"></div>
-             <span>25</span>
-            
-             <span>Delux</span>
-             <h5>4000/Day</h5>
-         </div>
-     </div>
-</div>
-</div><br><br>
 
 <div class="row justify-content-center">
     
@@ -54,30 +10,23 @@
             
                 <div class="form-group">
                     <div class="mb-3">
-                        <label for="exampleInputfloor">Room Floor</label>
-                        <select type="text" formControlName="floor" class="form-control" id="exampleInputfloor">
-                            <option value=""></option>
-                            <option value="3">1</option>
-                            <option value="5">2</option>
-                            <option value="6">3</option>
-                            <option value="7">4</option></select>
-                              
-                               
-                          
-                           
+                        <label for="exampleInputroomno">Room Number</label>
+                        <input type="text" formControlName="roomNo" class="form-control" id="exampleInputroomno">
+                            
+                 </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="exampleInputroom">Room Type</label>
+                        <input type="text" formControlName="room" class="form-control" id="exampleInputroom">
                             
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="mb-3">
-                        <label for="exampleInputroom">Room Type</label>
-                        <select type="text" formControlName="room" class="form-control" id="exampleInputroom">
-                            <option value=""></option>
-                        <option value="single_ac">Single Bed Ac </option>
-                        <option value="single_nonac">Single Bed Non-Ac </option>
-                        <option value="double_ac">Double Bed Ac </option>
-                        <option value="duble_nonac">Double Bed Non-Ac </option></select>
-                               
+                        <label for="exampleInputprice">Price</label>
+                        <input type="text" formControlName="price" class="form-control" id="exampleInputprice">
+                            
                     </div>
                 </div>
                
