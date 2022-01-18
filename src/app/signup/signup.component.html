@@ -15,7 +15,7 @@
                     </div>
                         <div class="mb-3">
                         <label for="exampleInputmobile" class="form-label">Mobile Number</label>
-                        <input formControlName="mobile" type="number" class="form-control" id="exampleInputmobile" placeholder="Mobile no">
+                        <input formControlName="mobile" type="text" class="form-control" id="exampleInputmobile" maxlength="10" placeholder="Mobile no">
                         <span class="text-danger" *ngIf="signupForm.controls['mobile'].dirty && signupForm.hasError('required','mobile')">*Mobile is required</span>
                     </div>
                     <div class="mb-3">

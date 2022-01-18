@@ -19,12 +19,14 @@ export class RoomtypeComponent implements OnInit {
       'roomNo': new FormControl(null, Validators.required),
       'room': new FormControl(null, Validators.required),
       'price': new FormControl(null, Validators.required),
+      'status': new FormControl(null, Validators.required),
      
     })
     this.myReactiveForm = this.formbuilder.group({
       roomNo:[''],
       room:[''],
-      price:['']
+      price:[''],
+      status:['']
      
     })
     this.getroom();
@@ -33,6 +35,7 @@ export class RoomtypeComponent implements OnInit {
     this.roomModelObj.roomNo = this.myReactiveForm.value.roomNo;
     this.roomModelObj.room = this.myReactiveForm.value.room;
     this.roomModelObj.price = this.myReactiveForm.value.price;
+    this.roomModelObj.status = this.myReactiveForm.value.status;
     
   
   this.api.postroom(this.roomModelObj)

@@ -8,20 +8,14 @@
             
                 <div class="form-group">
                     <div class="mb-3">
-                        <label for="exampleInputDes">Room Type</label>
-                        <select type="text" formControlName="description" class="form-control" id="exampleInputDes">
-                        <option value=""></option>
-                        <option value="SA 2000/Day">Single Bed Ac </option>
-                        <option value="SNA 1000/Day">Single Bed Non-Ac </option>
-                        <option value="DA 4000/Day">Double Bed Ac </option>
-                        <option value="DNA 3000/Day">Double Bed Non-Ac </option></select>
-                        
+                        <label for="exampleInputDes">Room Number</label>
+                        <input type="text" formControlName="description" class="form-control" id="exampleInputDes" placeholder="Put available room no." >
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="mb-3">
                         <label for="exampleInputfname1">First Name</label>
-                  <input type="text" formControlName="firstName" class="form-control" id="exampleInputfname1" >
+                  <input type="text" formControlName="firstName" class="form-control" id="exampleInputfname1" placeholder="First Name">
                  
                 </div>
                 </div>
@@ -29,7 +23,7 @@
                 <div class="form-group">
                     <div class="mb-3">
                         <label for="exampleInputlname1">lastName</label>
-                  <input type="text" formControlName="lastName" class="form-control" id="exampleInputlname1" >
+                  <input type="text" formControlName="lastName" class="form-control" id="exampleInputlname1" placeholder="Last Name" >
                             
                     </div>
                 </div>
@@ -40,14 +34,14 @@
             <div class="form-group">
                 <div class="mb-3">
                     <label for="exampleInputemail">User Email Id</label>
-                    <input type="email" formControlName="email" class="form-control" id="exampleInputemail" aria-describedby="emailHelp" >
+                    <input type="email" formControlName="email" class="form-control" id="exampleInputemail" aria-describedby="emailHelp" placeholder="Email ID" >
                         
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="exampleInputmobile">Mobile No</label>
-                    <input type="text" formControlName="mobile" class="form-control" id="exampleInputmobile" >
+                    <input type="text" formControlName="mobile" class="form-control" maxlength="10" id="exampleInputmobile" placeholder="Mobile No.">
                    
             </div>
 

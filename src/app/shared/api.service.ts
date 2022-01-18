@@ -7,8 +7,8 @@ import { map} from 'rxjs/operators'
 export class ApiService {
 
   constructor(private http : HttpClient) { }
-  postEmploye(date : any){
-    return this.http.post<any>("http://localhost:3000/posts",date)
+  postEmploye(data : any){
+    return this.http.post<any>("http://localhost:3000/posts",data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -21,8 +21,8 @@ export class ApiService {
     }))
   }
 
-  updateEmploye(date : any, id: number){
-    return this.http.put<any>("http://localhost:3000/posts/"+id,date)
+  updateEmploye(data : any, id: number){
+    return this.http.put<any>("http://localhost:3000/posts/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -54,8 +54,8 @@ export class ApiService {
       return res;
     }))
   }
-  updatefood(date : any, id: number){
-    return this.http.put<any>("http://localhost:3000/food/"+id,date)
+  updatefood(data : any, id: number){
+    return this.http.put<any>("http://localhost:3000/food/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -81,8 +81,8 @@ export class ApiService {
       return res;
     }))
   }
-  updateroom(date : any, id: number){
-    return this.http.put<any>("http://localhost:3000/room/"+id,date)
+  updateroom(data : any, id: number){
+    return this.http.put<any>("http://localhost:3000/room/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))
@@ -95,32 +95,32 @@ export class ApiService {
     }))
   }
   
-  getCon(){
-    return this.http.get<any>("http://localhost:3000/contact")
-    .pipe(map((res:any)=>{
-      return res;
-    }))
-  }
+  // getCon(){
+  //   return this.http.get<any>("http://localhost:3000/contact")
+  //   .pipe(map((res:any)=>{
+  //     return res;
+  //   }))
+  // }
 
-  postCont(data : any){
-    return this.http.post<any>("http://localhost:3000/contact",data)
-    .pipe(map((res:any)=>{
-      return res;
-    }))
-  }
-  updateCont(date : any, id: number){
-    return this.http.put<any>("http://localhost:3000/contact/"+id,date)
-    .pipe(map((res:any)=>{
-      return res;
-    }))
-  }
+  // postCont(data : any){
+  //   return this.http.post<any>("http://localhost:3000/contact",data)
+  //   .pipe(map((res:any)=>{
+  //     return res;
+  //   }))
+  // }
+  // updateCont(date : any, id: number){
+  //   return this.http.put<any>("http://localhost:3000/contact/"+id,date)
+  //   .pipe(map((res:any)=>{
+  //     return res;
+  //   }))
+  // }
 
-  deleteCont(id : number){
-    return this.http.delete<any>("http://localhost:3000/contact/"+id)
-    .pipe(map((res:any)=>{
-      return res;
-    }))
-  }
+  // deleteCont(id : number){
+  //   return this.http.delete<any>("http://localhost:3000/contact/"+id)
+  //   .pipe(map((res:any)=>{
+  //     return res;
+  //   }))
+  // }
   
 
   getdrin(){
@@ -136,8 +136,8 @@ export class ApiService {
       return res;
     }))
   }
-  updatedrink(date : any, id: number){
-    return this.http.put<any>("http://localhost:3000/drink/"+id,date)
+  updatedrink(data : any, id: number){
+    return this.http.put<any>("http://localhost:3000/drink/"+id,data)
     .pipe(map((res:any)=>{
       return res;
     }))

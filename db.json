@@ -19,6 +19,16 @@
       "edate": "2022-01-13T18:30:00.000Z",
       "email": "sachin@gmail.com",
       "mobile": "7845123654"
+    },
+    {
+      "id": 12,
+      "description": "56",
+      "firstName": "Priya",
+      "lastName": "patil",
+      "sdate": "2022-01-18T18:30:00.000Z",
+      "edate": "2022-01-19T18:30:00.000Z",
+      "email": "priya@gmail.com",
+      "mobile": "7845123654"
     }
   ],
   "signupUsers": [
@@ -94,6 +104,14 @@
       "mobile": 5689784512,
       "category": "hotelmanager",
       "id": 11
+    },
+    {
+      "fullname": "Priya",
+      "email": "priya@gmail.com",
+      "password": "12345",
+      "mobile": "8989565456",
+      "category": "user",
+      "id": 12
     }
   ],
   "food": [
@@ -124,29 +142,40 @@
       "description": "Non-Veg",
       "price": "300",
       "image": "https://image.freepik.com/free-photo/fried-fish-carp-fresh-vegetable-salad-wooden-table-flat-lay-top-view_2829-19730.jpg"
+    },
+    {
+      "id": 5,
+      "foodname": "Maharshtrian thali",
+      "description": "Thali",
+      "price": "300",
+      "image": "https://image.shutterstock.com/image-vector/illustration-traditional-maharashtrian-cuisine-food-260nw-781921369.jpg"
     }
   ],
   "room": [
     {
-      "id": 1,
-      "roomNo": "23",
-      "room": "Single-Bed Ac",
-      "price": "2000"
-    }
-  ],
-  "contact": [
-    {
-      "id": 1,
-      "name": "",
-      "email": "",
-      "mob": "",
-      "body": ""
+      "id": 2,
+      "roomNo": "56",
+      "room": "Double Bed Ac",
+      "price": "3000"
     },
     {
-      "id": 2
+      "id": 3,
+      "roomNo": "32",
+      "room": "Single Bed Non ac",
+      "price": "1000"
     },
     {
-      "id": 3
+      "id": 4,
+      "roomNo": "12",
+      "room": "Double bed Non Ac",
+      "price": "3000"
+    },
+    {
+      "id": 5,
+      "roomNo": "56",
+      "room": "Single Bed",
+      "price": "1000",
+      "status": "Confirmed"
     }
   ],
   "drink": [

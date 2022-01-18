@@ -39,38 +39,6 @@ getroom(){
       })
     }
 
-    deleterooms(row : any){
-      this.api.deleteroom(row.id)
-      .subscribe(res=>{
-        alert("room deleted");
-        this.getroom();
-      })
-    }
-
-    onEditr(row : any){
-      
-      this.showUpdate = true;
-      this.roomModelObj.id =  row.id
-      this.myReactiveForm.controls['roomNo'].setValue(row.roomNo);
-      this.myReactiveForm.controls['room'].setValue(row.room);
-      this.myReactiveForm.controls['price'].setValue(row.price);
-      
-    }
-
-    updateroomDetails(){
-      this.roomModelObj.roomNo = this.myReactiveForm.value.roomNo;
-      this.roomModelObj.room = this.myReactiveForm.value.room;
-      this.roomModelObj.price = this.myReactiveForm.value.price;
-      
-  
-      this.api.updateroom(this.roomModelObj,this.roomModelObj.id)
-      .subscribe(res=>{
-        alert("Updated Successfully");
-        let ref = document.getElementById('cancel')
-      ref?.click();
-      this.myReactiveForm.reset();
-      this.getroom();
-      })
-    }
+    
 }
 

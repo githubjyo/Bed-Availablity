@@ -6,7 +6,7 @@
     <div class="col-md-5">
        <div class="card">
         <h3 >Contact Us</h3>
-<form [formGroup]="form" >
+<form [formGroup]="form" (ngSubmit)="submit()">
 <div class="form-group">
  <label for="name">Name</label>
   <input formControlName="name" id="name" type="text" class="form-control">

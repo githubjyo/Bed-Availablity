@@ -3,4 +3,5 @@ export class roomModel{
     roomNo : string = '';
     room : string = '';
     price : string = '';
+    status : string = '';
 }
